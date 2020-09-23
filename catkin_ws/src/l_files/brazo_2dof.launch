@@ -1,0 +1,7 @@
+  <launch>
+   <!-- Load the urdf into the parameter server. -->
+   <param name="robot_description" textfile="/home/anie/Tesis_Rec_fallas/matlab_files/brazo_2dof.urdf"/>
+    
+   <node pkg="robot_state_publisher" type="robot_state_publisher" name="rob_st_pub" >
+    </node>
+  </launch>

@@ -1,0 +1,17 @@
+<package>
+  <name>ctrlp_tray_poli_ros</name>
+  <version>1.0.0</version>
+  <description>
+  This package is generated from CtrlP_Tray_Poli_ROS Simulink model.
+  </description>
+  <maintainer email="rosuser@test.com">ROS User</maintainer>
+  <license>BSD</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <build_depend>roscpp</build_depend>
+  <build_depend>std_msgs</build_depend>
+
+  <run_depend>roscpp</run_depend>
+  <run_depend>std_msgs</run_depend>
+</package>

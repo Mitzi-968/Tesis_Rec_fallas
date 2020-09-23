@@ -131,6 +131,9 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/anie/Tesis_Rec_fallas/catkin_ws/build/gtest/cmake_install.cmake")
+  include("/home/anie/Tesis_Rec_fallas/catkin_ws/build/brazo_2dof/cmake_install.cmake")
+  include("/home/anie/Tesis_Rec_fallas/catkin_ws/build/ctrlp_tray_poli_ros/cmake_install.cmake")
+  include("/home/anie/Tesis_Rec_fallas/catkin_ws/build/l_files/cmake_install.cmake")
   include("/home/anie/Tesis_Rec_fallas/catkin_ws/build/torques/cmake_install.cmake")
 
 endif()

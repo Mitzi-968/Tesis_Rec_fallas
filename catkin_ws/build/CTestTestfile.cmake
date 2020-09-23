@@ -5,4 +5,7 @@
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.
 subdirs("gtest")
+subdirs("brazo_2dof")
+subdirs("ctrlp_tray_poli_ros")
+subdirs("l_files")
 subdirs("torques")

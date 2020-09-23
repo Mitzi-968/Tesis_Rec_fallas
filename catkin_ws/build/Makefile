@@ -311,8 +311,21 @@ roscpp_generate_messages_py: cmake_check_build_system
 
 # fast build rule for target.
 roscpp_generate_messages_py/fast:
-	$(MAKE) -f torques/CMakeFiles/roscpp_generate_messages_py.dir/build.make torques/CMakeFiles/roscpp_generate_messages_py.dir/build
+	$(MAKE) -f brazo_2dof/CMakeFiles/roscpp_generate_messages_py.dir/build.make brazo_2dof/CMakeFiles/roscpp_generate_messages_py.dir/build
 .PHONY : roscpp_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named brazo_2dof_node
+
+# Build rule for target.
+brazo_2dof_node: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 brazo_2dof_node
+.PHONY : brazo_2dof_node
+
+# fast build rule for target.
+brazo_2dof_node/fast:
+	$(MAKE) -f brazo_2dof/CMakeFiles/brazo_2dof_node.dir/build.make brazo_2dof/CMakeFiles/brazo_2dof_node.dir/build
+.PHONY : brazo_2dof_node/fast
 
 #=============================================================================
 # Target rules for targets named roscpp_generate_messages_eus
@@ -324,7 +337,7 @@ roscpp_generate_messages_eus: cmake_check_build_system
 
 # fast build rule for target.
 roscpp_generate_messages_eus/fast:
-	$(MAKE) -f torques/CMakeFiles/roscpp_generate_messages_eus.dir/build.make torques/CMakeFiles/roscpp_generate_messages_eus.dir/build
+	$(MAKE) -f brazo_2dof/CMakeFiles/roscpp_generate_messages_eus.dir/build.make brazo_2dof/CMakeFiles/roscpp_generate_messages_eus.dir/build
 .PHONY : roscpp_generate_messages_eus/fast
 
 #=============================================================================
@@ -337,7 +350,7 @@ roscpp_generate_messages_lisp: cmake_check_build_system
 
 # fast build rule for target.
 roscpp_generate_messages_lisp/fast:
-	$(MAKE) -f torques/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make torques/CMakeFiles/roscpp_generate_messages_lisp.dir/build
+	$(MAKE) -f brazo_2dof/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make brazo_2dof/CMakeFiles/roscpp_generate_messages_lisp.dir/build
 .PHONY : roscpp_generate_messages_lisp/fast
 
 #=============================================================================
@@ -350,7 +363,7 @@ rosgraph_msgs_generate_messages_cpp: cmake_check_build_system
 
 # fast build rule for target.
 rosgraph_msgs_generate_messages_cpp/fast:
-	$(MAKE) -f torques/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make torques/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
+	$(MAKE) -f brazo_2dof/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make brazo_2dof/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
 .PHONY : rosgraph_msgs_generate_messages_cpp/fast
 
 #=============================================================================
@@ -363,7 +376,7 @@ std_msgs_generate_messages_lisp: cmake_check_build_system
 
 # fast build rule for target.
 std_msgs_generate_messages_lisp/fast:
-	$(MAKE) -f torques/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make torques/CMakeFiles/std_msgs_generate_messages_lisp.dir/build
+	$(MAKE) -f brazo_2dof/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make brazo_2dof/CMakeFiles/std_msgs_generate_messages_lisp.dir/build
 .PHONY : std_msgs_generate_messages_lisp/fast
 
 #=============================================================================
@@ -376,7 +389,7 @@ roscpp_generate_messages_cpp: cmake_check_build_system
 
 # fast build rule for target.
 roscpp_generate_messages_cpp/fast:
-	$(MAKE) -f torques/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make torques/CMakeFiles/roscpp_generate_messages_cpp.dir/build
+	$(MAKE) -f brazo_2dof/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make brazo_2dof/CMakeFiles/roscpp_generate_messages_cpp.dir/build
 .PHONY : roscpp_generate_messages_cpp/fast
 
 #=============================================================================
@@ -389,7 +402,7 @@ rosgraph_msgs_generate_messages_eus: cmake_check_build_system
 
 # fast build rule for target.
 rosgraph_msgs_generate_messages_eus/fast:
-	$(MAKE) -f torques/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make torques/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build
+	$(MAKE) -f brazo_2dof/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make brazo_2dof/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build
 .PHONY : rosgraph_msgs_generate_messages_eus/fast
 
 #=============================================================================
@@ -402,7 +415,7 @@ rosgraph_msgs_generate_messages_lisp: cmake_check_build_system
 
 # fast build rule for target.
 rosgraph_msgs_generate_messages_lisp/fast:
-	$(MAKE) -f torques/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make torques/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build
+	$(MAKE) -f brazo_2dof/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make brazo_2dof/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build
 .PHONY : rosgraph_msgs_generate_messages_lisp/fast
 
 #=============================================================================
@@ -415,7 +428,7 @@ std_msgs_generate_messages_cpp: cmake_check_build_system
 
 # fast build rule for target.
 std_msgs_generate_messages_cpp/fast:
-	$(MAKE) -f torques/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make torques/CMakeFiles/std_msgs_generate_messages_cpp.dir/build
+	$(MAKE) -f brazo_2dof/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make brazo_2dof/CMakeFiles/std_msgs_generate_messages_cpp.dir/build
 .PHONY : std_msgs_generate_messages_cpp/fast
 
 #=============================================================================
@@ -428,7 +441,7 @@ rosgraph_msgs_generate_messages_nodejs: cmake_check_build_system
 
 # fast build rule for target.
 rosgraph_msgs_generate_messages_nodejs/fast:
-	$(MAKE) -f torques/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build.make torques/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build
+	$(MAKE) -f brazo_2dof/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build.make brazo_2dof/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build
 .PHONY : rosgraph_msgs_generate_messages_nodejs/fast
 
 #=============================================================================
@@ -441,7 +454,7 @@ rosgraph_msgs_generate_messages_py: cmake_check_build_system
 
 # fast build rule for target.
 rosgraph_msgs_generate_messages_py/fast:
-	$(MAKE) -f torques/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make torques/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
+	$(MAKE) -f brazo_2dof/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make brazo_2dof/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
 .PHONY : rosgraph_msgs_generate_messages_py/fast
 
 #=============================================================================
@@ -454,7 +467,7 @@ std_msgs_generate_messages_eus: cmake_check_build_system
 
 # fast build rule for target.
 std_msgs_generate_messages_eus/fast:
-	$(MAKE) -f torques/CMakeFiles/std_msgs_generate_messages_eus.dir/build.make torques/CMakeFiles/std_msgs_generate_messages_eus.dir/build
+	$(MAKE) -f brazo_2dof/CMakeFiles/std_msgs_generate_messages_eus.dir/build.make brazo_2dof/CMakeFiles/std_msgs_generate_messages_eus.dir/build
 .PHONY : std_msgs_generate_messages_eus/fast
 
 #=============================================================================
@@ -467,7 +480,7 @@ std_msgs_generate_messages_nodejs: cmake_check_build_system
 
 # fast build rule for target.
 std_msgs_generate_messages_nodejs/fast:
-	$(MAKE) -f torques/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build.make torques/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build
+	$(MAKE) -f brazo_2dof/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build.make brazo_2dof/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build
 .PHONY : std_msgs_generate_messages_nodejs/fast
 
 #=============================================================================
@@ -480,7 +493,7 @@ roscpp_generate_messages_nodejs: cmake_check_build_system
 
 # fast build rule for target.
 roscpp_generate_messages_nodejs/fast:
-	$(MAKE) -f torques/CMakeFiles/roscpp_generate_messages_nodejs.dir/build.make torques/CMakeFiles/roscpp_generate_messages_nodejs.dir/build
+	$(MAKE) -f brazo_2dof/CMakeFiles/roscpp_generate_messages_nodejs.dir/build.make brazo_2dof/CMakeFiles/roscpp_generate_messages_nodejs.dir/build
 .PHONY : roscpp_generate_messages_nodejs/fast
 
 #=============================================================================
@@ -493,8 +506,21 @@ std_msgs_generate_messages_py: cmake_check_build_system
 
 # fast build rule for target.
 std_msgs_generate_messages_py/fast:
-	$(MAKE) -f torques/CMakeFiles/std_msgs_generate_messages_py.dir/build.make torques/CMakeFiles/std_msgs_generate_messages_py.dir/build
+	$(MAKE) -f brazo_2dof/CMakeFiles/std_msgs_generate_messages_py.dir/build.make brazo_2dof/CMakeFiles/std_msgs_generate_messages_py.dir/build
 .PHONY : std_msgs_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named ctrlp_tray_poli_ros_node
+
+# Build rule for target.
+ctrlp_tray_poli_ros_node: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 ctrlp_tray_poli_ros_node
+.PHONY : ctrlp_tray_poli_ros_node
+
+# fast build rule for target.
+ctrlp_tray_poli_ros_node/fast:
+	$(MAKE) -f ctrlp_tray_poli_ros/CMakeFiles/ctrlp_tray_poli_ros_node.dir/build.make ctrlp_tray_poli_ros/CMakeFiles/ctrlp_tray_poli_ros_node.dir/build
+.PHONY : ctrlp_tray_poli_ros_node/fast
 
 #=============================================================================
 # Target rules for targets named torques_node
@@ -542,6 +568,8 @@ help:
 	@echo "... std_msgs_generate_messages_nodejs"
 	@echo "... std_msgs_generate_messages_py"
 	@echo "... tests"
+	@echo "... brazo_2dof_node"
+	@echo "... ctrlp_tray_poli_ros_node"
 	@echo "... gmock"
 	@echo "... gmock_main"
 	@echo "... gtest"

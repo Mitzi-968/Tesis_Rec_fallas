@@ -1,2 +1,2 @@
-torques
+brazo_2dof:ctrlp_tray_poli_ros:l_files:torques
 -DCATKIN_DEVEL_PREFIX=/home/anie/Tesis_Rec_fallas/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/anie/Tesis_Rec_fallas/catkin_ws/install -G Unix Makefiles

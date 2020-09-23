@@ -312,11 +312,23 @@ _gtest_INCLUDES:FILEPATH=/usr/include/gtest/gtest.h
 //Path to a file.
 _gtest_SOURCES:FILEPATH=/usr/src/gtest/src/gtest.cc
 
+//Value Computed by CMake
+brazo_2dof_BINARY_DIR:STATIC=/home/anie/Tesis_Rec_fallas/catkin_ws/build/brazo_2dof
+
+//Value Computed by CMake
+brazo_2dof_SOURCE_DIR:STATIC=/home/anie/Tesis_Rec_fallas/catkin_ws/src/brazo_2dof
+
 //The directory containing a CMake configuration file for catkin.
 catkin_DIR:PATH=/opt/ros/melodic/share/catkin/cmake
 
 //The directory containing a CMake configuration file for cpp_common.
 cpp_common_DIR:PATH=/opt/ros/melodic/share/cpp_common/cmake
+
+//Value Computed by CMake
+ctrlp_tray_poli_ros_BINARY_DIR:STATIC=/home/anie/Tesis_Rec_fallas/catkin_ws/build/ctrlp_tray_poli_ros
+
+//Value Computed by CMake
+ctrlp_tray_poli_ros_SOURCE_DIR:STATIC=/home/anie/Tesis_Rec_fallas/catkin_ws/src/ctrlp_tray_poli_ros
 
 //Value Computed by CMake
 gmock_BINARY_DIR:STATIC=/home/anie/Tesis_Rec_fallas/catkin_ws/build/gtest/googlemock
@@ -366,6 +378,12 @@ gtest_hide_internal_symbols:BOOL=OFF
 
 //Dependencies for the target
 gtest_main_LIB_DEPENDS:STATIC=general;-lpthread;general;gtest;
+
+//Value Computed by CMake
+l_files_BINARY_DIR:STATIC=/home/anie/Tesis_Rec_fallas/catkin_ws/build/l_files
+
+//Value Computed by CMake
+l_files_SOURCE_DIR:STATIC=/home/anie/Tesis_Rec_fallas/catkin_ws/src/l_files
 
 //Path to a library.
 lib:FILEPATH=/opt/ros/melodic/lib/libxmlrpcpp.so
@@ -522,7 +540,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=5
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=8
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

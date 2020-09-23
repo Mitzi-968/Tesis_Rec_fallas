@@ -1,0 +1,8 @@
+prefix=/home/anie/Tesis_Rec_fallas/catkin_ws/devel
+
+Name: l_files
+Description: Description of l_files
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
