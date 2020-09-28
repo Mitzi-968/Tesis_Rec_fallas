@@ -2,4 +2,5 @@
    <!-- Load the urdf into the parameter server. -->
    <param name="robot_description" textfile="$(find l_files)/urdf/brazo_2dof.urdf"/>
    <node pkg="robot_state_publisher" type="robot_state_publisher" name="robot_state_publisher"/>
+   <node name="rviz" pkg="rviz" type="rviz" args="-d $(find l_files)/rviz/brazo_2dof.rviz"/>
   </launch>
