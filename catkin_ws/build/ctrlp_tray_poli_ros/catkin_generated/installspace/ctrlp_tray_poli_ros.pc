@@ -1,8 +1,0 @@
-prefix=/home/anie/Tesis_Rec_fallas/catkin_ws/install
-
-Name: ctrlp_tray_poli_ros
-Description: Description of ctrlp_tray_poli_ros
-Version: 1.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: roscpp std_msgs

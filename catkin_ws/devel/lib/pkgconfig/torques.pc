@@ -1,8 +1,0 @@
-prefix=/home/anie/Tesis_Rec_fallas/catkin_ws/devel
-
-Name: torques
-Description: Description of torques
-Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 
