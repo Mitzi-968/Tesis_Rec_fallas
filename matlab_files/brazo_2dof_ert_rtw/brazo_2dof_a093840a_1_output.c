@@ -28,6 +28,8 @@ PmfMessageId brazo_2dof_a093840a_1_output(const RuntimeDerivedValuesBundle *rtdv
   (void) discreteState;
   (void) neDiagMgr;
   output[0] = state[0];
-  output[1] = state[2];
+  output[1] = state[1];
+  output[2] = state[2];
+  output[3] = state[3];
   return NULL;
 }

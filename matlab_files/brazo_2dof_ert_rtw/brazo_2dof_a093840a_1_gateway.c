@@ -15,7 +15,7 @@
 void brazo_2dof_a093840a_1_gateway(void)
 {
   NeModelParameters modelparams = { (NeSolverType) 0, 0.001, 0, 0.002, 0, 0, 0,
-    0, (SscLoggingSetting) 0, 521023892, };
+    0, (SscLoggingSetting) 0, 523537605, };
 
   NeSolverParameters solverparams = { 0, 0, 1, 0, 0, 0.001, 1e-06, 1e-09, 0, 0,
     100, 0, 1, 0, 1e-09, 0, (NeLocalSolverChoice) 0, 0.001, 0, 3, 2,

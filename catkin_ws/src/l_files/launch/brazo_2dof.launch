@@ -1,9 +1,10 @@
   <launch>
-   <!-- Load the urdf into the parameter server. -->
+
    <param name="robot_description" textfile="$(find l_files)/urdf/brazo_2dof.urdf"/>
    <node pkg="robot_state_publisher" type="robot_state_publisher" name="robot_state_publisher"/>
    <node name="rviz" pkg="rviz" type="rviz" args="-d $(find l_files)/rviz/brazo_2dof.rviz"/>
-   <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher">
+
+   <node name="js_pub" pkg="js_pub" type="js_pub.py" output="screen">
      <param name="use_gui" value="true"/>
    </node>
   </launch>

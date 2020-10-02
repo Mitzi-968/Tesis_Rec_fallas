@@ -652,7 +652,7 @@ static
   smData->mModeVectorSize = 0;
   smData->mNumZeroCrossings = 0;
   smData->mInputVectorSize = 2;
-  smData->mOutputVectorSize = 2;
+  smData->mOutputVectorSize = 4;
   smData->mNumConstraintEqns = 0;
   smData->mDoCheckDynamics = false;
   for (i = 0; i < 4; ++i)
@@ -668,8 +668,8 @@ static
   };
 
   const CTarget targets[4] = {
-    { 0, 8, 0, false, 0, 2, "deg", false, true, +1.000000000000000000e+00, true,
-      1, { +1.570796326794896558e+00, +0.000000000000000000e+00,
+    { 0, 8, 0, false, 0, 2, "rad", false, true, +1.000000000000000000e+00, true,
+      1, { +1.570000000000000062e+00, +0.000000000000000000e+00,
         +0.000000000000000000e+00, +0.000000000000000000e+00 }, { +
         0.000000000000000000e+00 } },
 
@@ -938,23 +938,27 @@ static
     { 1, 1 }, { 1, 1 }
   };
 
-  const char *outputPortPaths[2] = {
+  const char *outputPortPaths[4] = {
     "joint_A.q",
-    "joint_B.q"
+    "joint_A.w",
+    "joint_B.q",
+    "joint_B.w"
   };
 
-  const char *outputUnits[2] = {
+  const char *outputUnits[4] = {
     "rad",
-    "rad"
+    "rad/s",
+    "rad",
+    "rad/s"
   };
 
-  const SizePair outputDimensions[2] = {
-    { 1, 1 }, { 1, 1 }
+  const SizePair outputDimensions[4] = {
+    { 1, 1 }, { 1, 1 }, { 1, 1 }, { 1, 1 }
   };
 
   initIoInfoHelper(2, inputPortPaths, inputUnits, inputDimensions,
                    true, smData);
-  initIoInfoHelper(2, outputPortPaths, outputUnits, outputDimensions,
+  initIoInfoHelper(4, outputPortPaths, outputUnits, outputDimensions,
                    false, smData);
 }
 
@@ -981,8 +985,8 @@ static
     false, false
   };
 
-  const boolean_T directFeedthroughMatrix[4] = {
-    false, false, false, false
+  const boolean_T directFeedthroughMatrix[8] = {
+    false, false, false, false, false, false, false, false
   };
 
   PmAllocator *alloc = pm_default_allocator();
@@ -997,10 +1001,10 @@ static
 
   {
     const int_T status = pm_create_bool_vector_fields(
-      &smData->mDirectFeedthroughMatrix, 4, alloc);
+      &smData->mDirectFeedthroughMatrix, 8, alloc);
     checkMemAllocStatus(status);
     memcpy(smData->mDirectFeedthroughMatrix.mX, directFeedthroughMatrix,
-           4 * sizeof(boolean_T));
+           8 * sizeof(boolean_T));
   }
 }
 
@@ -1008,13 +1012,13 @@ static
   void initOutputDerivProc(NeDaePrivateData *smData)
 {
   PmAllocator *alloc = pm_default_allocator();
-  const int32_T outputFunctionMap[2] = {
-    0, 0
+  const int32_T outputFunctionMap[4] = {
+    0, 0, 0, 0
   };
 
-  smData->mOutputFunctionMap = pm_create_int_vector(2, alloc);
+  smData->mOutputFunctionMap = pm_create_int_vector(4, alloc);
   memcpy(smData->mOutputFunctionMap->mX, outputFunctionMap,
-         2 * sizeof(int32_T));
+         4 * sizeof(int32_T));
   smData->mNumOutputClasses = 1;
   smData->mHasKinematicOutputs = true;
   smData->mHasDynamicOutputs = false;

@@ -2,7 +2,7 @@
 ## Makefile generated for Simulink model 'brazo_2dof'. 
 ## 
 ## Makefile     : brazo_2dof.mk
-## Generated on : Thu Sep 03 08:52:46 2020
+## Generated on : Fri Oct 02 11:09:11 2020
 ## MATLAB Coder version: 4.3 (R2019b)
 ## 
 ## Build Info:
@@ -170,12 +170,12 @@ INCLUDES = $(INCLUDES_BUILDINFO)
 ## DEFINES
 ###########################################################################
 
-DEFINES_ = -DMODEL=brazo_2dof -DNUMST=2 -DNCSTATES=8 -DHAVESTDIO -DMODEL_HAS_DYNAMICALLY_LOADED_SFCNS=0 -DUNIX -DCLASSIC_INTERFACE=0 -DALLOCATIONFCN=0 -DTID01EQ=1 -DTERMFCN=1 -DONESTEPFCN=1 -DMAT_FILE=0 -DMULTI_INSTANCE_CODE=0 -DINTEGER_CODE=0 -DMT=0 -DROS_PROJECT -DMW_SCHED_OTHER -DSTACK_SIZE=64 -D__MW_TARGET_USE_HARDWARE_RESOURCES_H__ -DRT=RT
+DEFINES_ = -DMODEL=brazo_2dof -DNUMST=2 -DNCSTATES=4 -DHAVESTDIO -DMODEL_HAS_DYNAMICALLY_LOADED_SFCNS=0 -DUNIX -DCLASSIC_INTERFACE=0 -DALLOCATIONFCN=0 -DTID01EQ=1 -DTERMFCN=1 -DONESTEPFCN=1 -DMAT_FILE=0 -DMULTI_INSTANCE_CODE=0 -DINTEGER_CODE=0 -DMT=0 -DROS_PROJECT -DMW_SCHED_OTHER -DSTACK_SIZE=64 -D__MW_TARGET_USE_HARDWARE_RESOURCES_H__ -DRT=RT
 DEFINES_BUILD_ARGS = -DCLASSIC_INTERFACE=0 -DALLOCATIONFCN=0 -DTERMFCN=1 -DONESTEPFCN=1 -DMAT_FILE=0 -DMULTI_INSTANCE_CODE=0 -DINTEGER_CODE=0 -DMT=0
 DEFINES_CUSTOM = 
 DEFINES_OPTS = -DTID01EQ=1
 DEFINES_SKIPFORSIL = -DROS_PROJECT -DMW_SCHED_OTHER -DSTACK_SIZE=64
-DEFINES_STANDARD = -DMODEL=brazo_2dof -DNUMST=2 -DNCSTATES=8 -DHAVESTDIO -DMODEL_HAS_DYNAMICALLY_LOADED_SFCNS=0 -DUNIX
+DEFINES_STANDARD = -DMODEL=brazo_2dof -DNUMST=2 -DNCSTATES=4 -DHAVESTDIO -DMODEL_HAS_DYNAMICALLY_LOADED_SFCNS=0 -DUNIX
 
 DEFINES = $(DEFINES_) $(DEFINES_BUILD_ARGS) $(DEFINES_CUSTOM) $(DEFINES_OPTS) $(DEFINES_SKIPFORSIL) $(DEFINES_STANDARD)
 
@@ -183,7 +183,7 @@ DEFINES = $(DEFINES_) $(DEFINES_BUILD_ARGS) $(DEFINES_CUSTOM) $(DEFINES_OPTS) $(
 ## SOURCE FILES
 ###########################################################################
 
-SRCS = $(START_DIR)/brazo_2dof_ert_rtw/brazo_2dof_a093840a_1.c $(START_DIR)/brazo_2dof_ert_rtw/brazo_2dof_a093840a_1_create.c $(START_DIR)/brazo_2dof_ert_rtw/brazo_2dof_a093840a_1_setParameters.c $(START_DIR)/brazo_2dof_ert_rtw/brazo_2dof_a093840a_1_asserts.c $(START_DIR)/brazo_2dof_ert_rtw/brazo_2dof_a093840a_1_deriv.c $(START_DIR)/brazo_2dof_ert_rtw/brazo_2dof_a093840a_1_checkDynamics.c $(START_DIR)/brazo_2dof_ert_rtw/brazo_2dof_a093840a_1_output.c $(START_DIR)/brazo_2dof_ert_rtw/brazo_2dof_a093840a_1_asm_delegate.c $(START_DIR)/brazo_2dof_ert_rtw/brazo_2dof_a093840a_1_sim_delegate.c $(START_DIR)/brazo_2dof_ert_rtw/brazo_2dof_a093840a_1_mode_zero_crossings.c $(START_DIR)/brazo_2dof_ert_rtw/brazo_2dof_a093840a_1_geometries.c $(START_DIR)/brazo_2dof_ert_rtw/brazo_2dof_a093840a_1_gateway.c $(START_DIR)/brazo_2dof_ert_rtw/pm_printf.c $(START_DIR)/brazo_2dof_ert_rtw/rt_backsubrr_dbl.c $(START_DIR)/brazo_2dof_ert_rtw/rt_forwardsubrr_dbl.c $(START_DIR)/brazo_2dof_ert_rtw/rt_lu_real.c $(START_DIR)/brazo_2dof_ert_rtw/rt_matrixlib_dbl.c $(START_DIR)/brazo_2dof_ert_rtw/brazo_2dof.cpp $(START_DIR)/brazo_2dof_ert_rtw/brazo_2dof_data.cpp $(START_DIR)/brazo_2dof_ert_rtw/rtGetInf.cpp $(START_DIR)/brazo_2dof_ert_rtw/rtGetNaN.cpp $(START_DIR)/brazo_2dof_ert_rtw/rt_nonfinite.cpp $(MATLAB_ROOT)/toolbox/target/codertarget/rtos/src/linuxinitialize.cpp $(START_DIR)/brazo_2dof_ert_rtw/slros_busmsg_conversion.cpp $(START_DIR)/brazo_2dof_ert_rtw/slros_initialize.cpp $(MATLAB_ROOT)/toolbox/ros/slros/src/slros_generic_param.cpp
+SRCS = $(START_DIR)/brazo_2dof_ert_rtw/brazo_2dof_a093840a_1.c $(START_DIR)/brazo_2dof_ert_rtw/brazo_2dof_a093840a_1_create.c $(START_DIR)/brazo_2dof_ert_rtw/brazo_2dof_a093840a_1_setParameters.c $(START_DIR)/brazo_2dof_ert_rtw/brazo_2dof_a093840a_1_asserts.c $(START_DIR)/brazo_2dof_ert_rtw/brazo_2dof_a093840a_1_deriv.c $(START_DIR)/brazo_2dof_ert_rtw/brazo_2dof_a093840a_1_checkDynamics.c $(START_DIR)/brazo_2dof_ert_rtw/brazo_2dof_a093840a_1_output.c $(START_DIR)/brazo_2dof_ert_rtw/brazo_2dof_a093840a_1_asm_delegate.c $(START_DIR)/brazo_2dof_ert_rtw/brazo_2dof_a093840a_1_sim_delegate.c $(START_DIR)/brazo_2dof_ert_rtw/brazo_2dof_a093840a_1_mode_zero_crossings.c $(START_DIR)/brazo_2dof_ert_rtw/brazo_2dof_a093840a_1_geometries.c $(START_DIR)/brazo_2dof_ert_rtw/brazo_2dof_a093840a_1_gateway.c $(START_DIR)/brazo_2dof_ert_rtw/pm_printf.c $(START_DIR)/brazo_2dof_ert_rtw/rt_backsubrr_dbl.c $(START_DIR)/brazo_2dof_ert_rtw/rt_forwardsubrr_dbl.c $(START_DIR)/brazo_2dof_ert_rtw/rt_lu_real.c $(START_DIR)/brazo_2dof_ert_rtw/rt_matrixlib_dbl.c $(START_DIR)/brazo_2dof_ert_rtw/brazo_2dof.cpp $(START_DIR)/brazo_2dof_ert_rtw/brazo_2dof_data.cpp $(MATLAB_ROOT)/toolbox/target/codertarget/rtos/src/linuxinitialize.cpp $(START_DIR)/brazo_2dof_ert_rtw/slros_busmsg_conversion.cpp $(START_DIR)/brazo_2dof_ert_rtw/slros_initialize.cpp $(MATLAB_ROOT)/toolbox/ros/slros/src/slros_generic_param.cpp
 
 MAIN_SRC = $(START_DIR)/brazo_2dof_ert_rtw/ert_main.cpp
 
@@ -193,7 +193,7 @@ ALL_SRCS = $(SRCS) $(MAIN_SRC)
 ## OBJECTS
 ###########################################################################
 
-OBJS = brazo_2dof_a093840a_1.c.o brazo_2dof_a093840a_1_create.c.o brazo_2dof_a093840a_1_setParameters.c.o brazo_2dof_a093840a_1_asserts.c.o brazo_2dof_a093840a_1_deriv.c.o brazo_2dof_a093840a_1_checkDynamics.c.o brazo_2dof_a093840a_1_output.c.o brazo_2dof_a093840a_1_asm_delegate.c.o brazo_2dof_a093840a_1_sim_delegate.c.o brazo_2dof_a093840a_1_mode_zero_crossings.c.o brazo_2dof_a093840a_1_geometries.c.o brazo_2dof_a093840a_1_gateway.c.o pm_printf.c.o rt_backsubrr_dbl.c.o rt_forwardsubrr_dbl.c.o rt_lu_real.c.o rt_matrixlib_dbl.c.o brazo_2dof.cpp.o brazo_2dof_data.cpp.o rtGetInf.cpp.o rtGetNaN.cpp.o rt_nonfinite.cpp.o linuxinitialize.cpp.o slros_busmsg_conversion.cpp.o slros_initialize.cpp.o slros_generic_param.cpp.o
+OBJS = brazo_2dof_a093840a_1.c.o brazo_2dof_a093840a_1_create.c.o brazo_2dof_a093840a_1_setParameters.c.o brazo_2dof_a093840a_1_asserts.c.o brazo_2dof_a093840a_1_deriv.c.o brazo_2dof_a093840a_1_checkDynamics.c.o brazo_2dof_a093840a_1_output.c.o brazo_2dof_a093840a_1_asm_delegate.c.o brazo_2dof_a093840a_1_sim_delegate.c.o brazo_2dof_a093840a_1_mode_zero_crossings.c.o brazo_2dof_a093840a_1_geometries.c.o brazo_2dof_a093840a_1_gateway.c.o pm_printf.c.o rt_backsubrr_dbl.c.o rt_forwardsubrr_dbl.c.o rt_lu_real.c.o rt_matrixlib_dbl.c.o brazo_2dof.cpp.o brazo_2dof_data.cpp.o linuxinitialize.cpp.o slros_busmsg_conversion.cpp.o slros_initialize.cpp.o slros_generic_param.cpp.o
 
 MAIN_OBJ = ert_main.cpp.o
 
@@ -613,18 +613,6 @@ brazo_2dof.cpp.o : $(START_DIR)/brazo_2dof_ert_rtw/brazo_2dof.cpp
 
 
 brazo_2dof_data.cpp.o : $(START_DIR)/brazo_2dof_ert_rtw/brazo_2dof_data.cpp
-	$(CPP) $(CPPFLAGS) -o $@ $<
-
-
-rtGetInf.cpp.o : $(START_DIR)/brazo_2dof_ert_rtw/rtGetInf.cpp
-	$(CPP) $(CPPFLAGS) -o $@ $<
-
-
-rtGetNaN.cpp.o : $(START_DIR)/brazo_2dof_ert_rtw/rtGetNaN.cpp
-	$(CPP) $(CPPFLAGS) -o $@ $<
-
-
-rt_nonfinite.cpp.o : $(START_DIR)/brazo_2dof_ert_rtw/rt_nonfinite.cpp
 	$(CPP) $(CPPFLAGS) -o $@ $<
 
 

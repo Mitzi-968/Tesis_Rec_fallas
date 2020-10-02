@@ -7,9 +7,9 @@
 //
 // Code generated for Simulink model 'brazo_2dof'.
 //
-// Model version                  : 1.7
+// Model version                  : 1.36
 // Simulink Coder version         : 9.2 (R2019b) 18-Jul-2019
-// C/C++ source code generated on : Thu Sep  3 08:52:08 2020
+// C/C++ source code generated on : Fri Oct  2 11:08:30 2020
 //
 // Target selection: ert.tlc
 // Embedded hardware selection: Intel->x86-64 (Linux 64)
