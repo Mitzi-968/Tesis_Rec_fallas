@@ -1,47 +1,31 @@
-%load('feedforward_ws.mat')
-%pos_all = readmatrix('Pos.xls');
-%torques_all = readmatrix('Torques.xls');
-t = masa_t;
-x1 = pos_all;
-x2 = torques_x_all;
-x3 = torques_y_all;
-x4 = torques_z_all;
-x = {x1;x2;x3;x4};
+Data = readtable('Datos_lab.xls');
+notrained_data = readmatrix("NT_Data.xls");
+Data = mergevars(Data, {'Posiciones_1','Posiciones_2','Posiciones_3','Posiciones_4','Posiciones_5','Posiciones_6','Posiciones_7'}, 'NewVariableName', 'Posiciones', 'MergeAsTable', false);
+Data = mergevars(Data, {'Torques_1','Torques_2','Torques_3','Torques_4','Torques_5','Torques_6','Torques_7'}, 'NewVariableName', 'Torques', 'MergeAsTable', false);
+inputs = [Data.Posiciones';Data.Torques';Data.Masas'];
+targets = Data.Masas';
+inputs2 = [inputs,notrained_data];
+targets2 = [targets,notrained_data(15,:)];
+net = feedforwardnet(10);
 
-net = feedforwardnet;
-net.numinputs = 4;
-net = configure(net,x,t);
-net = train(net,x,t);
-view(net)
-% x = {pos_all;torques_all};
-% t = [out.Posiciones.time];
-% net = feedforwardnet;
-% net.numinputs = 2;
-% % net.layers{1};
-% % net.layerWeights{2,1};
-% % net = linearlayer(0,0);
-% net = configure(net,x);
-% net = train(net,x,t);
-% view(net)
 
-% net.IW{1,1} = zeros([7001 7001]);
-% net.b{1} = zeros([7001 1]);
-% [net,a,e,pf] = adapt(net,pos_all,torques_all);
-% net.inputWeights{1,1}.learnParam.lr = 0.1;
-% net.biases{1,1}.learnParam.lr = 0.1;
-% [net,a,e,pf] = adapt(net,pos_all,torques_all);
-% a;
-% [net,a,e,pf] = adapt(net,pos_all,torques_all);
-% a;
-% % [net1,a1,e1,pf1] = adapt(net,pos_all,torques_all);
-% % [net1,a1,e1,pf1] = adapt(net1,pos_all,torques_all);
-% tiledlayout(2,1)
-% ax1 = nexttile;
-% plot(ax1,pos_all,torques_all)
-% title(ax1,'Relación Posiciones-Torques original')
-% ax2 = nexttile;
-% plot(ax2,pos_all,a, 'g')
-% title(ax2,'Relación Posiciones-Torques obtenida con la red')
-% % ax3 = nexttile;
-% % plot(ax3,pos_all,a1,'b')
-% % title(ax3,'Relación Posiciones-Torques Iteración 2 (w&B cambiados)')
+[net,tr] = train(net,inputs,targets);
+
+output_net = net(inputs(:,38))
+output_net = net(notrained_data(:,9))
+
+[net,tr] = train(net,inputs,targets);
+
+output_net_1 = net(inputs(:,38))
+output_net_1 = net(notrained_data(:,9))
+
+[net1,tr] = train(net,inputs2,targets2);
+
+output_net1 = net1(inputs(:,38))
+output_net1 = net1(notrained_data(:,9))
+
+
+[net2,a,e,pf] = adapt(net1,inputs2,targets2);
+
+output_net2 = net2(inputs(:,38))
+output_net2 = net2(notrained_data(:,9))
